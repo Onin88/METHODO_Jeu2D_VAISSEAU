@@ -1,0 +1,13 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/patri/Desktop/TP_methodo/Tp_methodo_Durham_Beluche/projet/niveau3'
+gcc -O3 -Dmain=SDL_main -c main.c  -I C:\Users\patri\Desktop\TP_methodo\Tp_methodo_Durham_Beluche\SDL2\include
+ 
+gcc -O3 -Dmain=SDL_main -c sdl2-light.c  -I C:\Users\patri\Desktop\TP_methodo\Tp_methodo_Durham_Beluche\SDL2\include
+ 
+gcc -O3 -Dmain=SDL_main -c world_data.c  -I C:\Users\patri\Desktop\TP_methodo\Tp_methodo_Durham_Beluche\SDL2\include
+ 
+gcc -O3 -Dmain=SDL_main -c texture_data.c  -I C:\Users\patri\Desktop\TP_methodo\Tp_methodo_Durham_Beluche\SDL2\include
+ 
+gcc -O3 -Dmain=SDL_main main.o sdl2-light.o world_data.o texture_data.o -lm -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -o spacebattle.exe -L C:\Users\patri\Desktop\TP_methodo\Tp_methodo_Durham_Beluche\SDL2\lib
+make: Leaving directory 'c:/Users/patri/Desktop/TP_methodo/Tp_methodo_Durham_Beluche/projet/niveau3'
+ 
